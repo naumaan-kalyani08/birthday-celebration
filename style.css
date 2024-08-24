@@ -74,11 +74,11 @@
 }
 
 #balloon2 {
-  animation: balloon-bounce 3s infinite ease-in-out 1s; /* Adjust delay to match text */
+  animation: balloon-bounce 3s infinite ease-in-out ; /* Adjust delay to match text */
 }
 
 #balloon3 {
-  animation: balloon-bounce 3s infinite ease-in-out 2s; /* Adjust delay to match text */
+  animation: balloon-bounce 3s infinite ease-in-out ; /* Adjust delay to match text */
 }
 
 
