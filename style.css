@@ -5,6 +5,96 @@
   box-sizing: border-box;
 }
 
+@keyframes bounce-glow {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: translateY(-20px);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.wish-text {
+  margin: 2.5vh 0;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: bounce-glow 3s infinite ease-in-out; /* Same duration as balloons */
+}
+
+
+
+/* Balloons Styling */
+.balloons-wrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Space between balloons */
+}
+
+.balloon {
+  margin-top: 5vh;
+  width: 60px;
+  height: 80px;
+  background: radial-gradient(circle, #ff69b4, #ff1493);
+  border-radius: 50% 50% 50% 50%;
+  position: relative;
+}
+
+.balloon::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: #000;
+  transform: translateX(-50%);
+  top: 80px;
+}
+
+/* Balloons Animations */
+@keyframes balloon-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Adding delay to make them sync with text */
+#balloon1 {
+  animation: balloon-bounce 3s infinite ease-in-out;
+}
+
+#balloon2 {
+  animation: balloon-bounce 3s infinite ease-in-out 1s; /* Adjust delay to match text */
+}
+
+#balloon3 {
+  animation: balloon-bounce 3s infinite ease-in-out 2s; /* Adjust delay to match text */
+}
+
+/* Adjusting the wish-text position */
+/* .wish-text {
+  margin: 5vh 0 0;
+  text-align: center;
+  border: 5px solid grey;
+  font-family: 'Moderustic', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: bounce-glow 3s infinite ease-in-out;
+} */
+
+
+
 body {
   height: 100vh;
   overflow: hidden;
@@ -18,6 +108,7 @@ body {
   background: -ms-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* For Internet Explorer 10 */
   background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* Standard syntax */
   color: #333; /* Optional: Color for text to ensure readability */
+  margin-top: 15vh;
 }
 .wish-text{
   margin: 2.5vh 0;
@@ -86,7 +177,7 @@ body {
   background-size: cover;
   /* gap: 5rem; */
   text-align: center;
-  filter: brightness(0.8);
+  
 }
 
 .back-card-text{
@@ -95,6 +186,7 @@ body {
 }
 .back-text-wrapper{
   margin-top: 10px;
+  padding: 5px;
 }
 
 
