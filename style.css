@@ -86,7 +86,7 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
   background: -webkit-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
   background: -moz-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
@@ -173,7 +173,7 @@ body {
   height: 130px;
   left: 57%;
   margin-left: -125px;
-  bottom: 2%;
+  /* bottom: 2%; */
 }
 
 .plate {
