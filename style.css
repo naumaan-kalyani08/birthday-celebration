@@ -81,41 +81,25 @@
   animation: balloon-bounce 3s infinite ease-in-out 2s; /* Adjust delay to match text */
 }
 
-/* Adjusting the wish-text position */
-/* .wish-text {
-  margin: 5vh 0 0;
-  text-align: center;
-  border: 5px solid grey;
-  font-family: 'Moderustic', sans-serif;
-  font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  animation: bounce-glow 3s infinite ease-in-out;
-} */
 
 
 
 body {
   height: 100vh;
   overflow: hidden;
-  /* background: linear-gradient(45deg, #061de3, #e306ca); */
-  /* font-family: Helvetica, sans-serif; */
   background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
-  /* Fallback for older browsers */
-  background: -webkit-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* For Safari 5.1 to 6.0 */
-  background: -moz-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* For Firefox 3.6 to 15 */
-  background: -o-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* For Opera 11.1 to 12.0 */
-  background: -ms-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* For Internet Explorer 10 */
-  background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); /* Standard syntax */
-  color: #333; /* Optional: Color for text to ensure readability */
+  background: -webkit-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
+  background: -moz-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
+  background: -o-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
+  background: -ms-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
+  background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
+  color: #333;
   margin-top: 15vh;
 }
 .wish-text{
   margin: 2.5vh 0;
-  /* background-color: #061de3; */
   text-align: center;
   font-size: 40px;
-  /* border: 5px solid grey; */
   color: #D14D72;
 }
 .card-wrapper{
@@ -162,20 +146,12 @@ body {
   font-size: 20px;
 }
 
-/* .front {
-  background-image: url(https://source.unsplash.com/random/350x500);
-} */
-
 .back {
   background-color: #3a3a3a;
   transform: rotateY(180deg);
-  /* display: flex; */
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   background-image: url('./bd-3.jpg');
   background-size: cover;
-  /* gap: 5rem; */
   text-align: center;
   
 }
@@ -212,13 +188,13 @@ body {
 }
 
 canvas.confetti {
-  position: fixed; /* Fix the canvas to the viewport */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  pointer-events: none; /* Ensure the canvas does not interfere with other elements */
-  z-index: -1; /* Place the canvas behind other content */
+  width: 100vw; 
+  height: 100vh; 
+  pointer-events: none;
+  z-index: -1;
 }
 
 .cake > * {
