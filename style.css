@@ -85,7 +85,7 @@
 
 
 body {
-  height: 100vh;
+  height: 100%;
   /* overflow: hidden; */
   background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
   background: -webkit-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
@@ -125,9 +125,16 @@ body {
   width: 100%;
   position: relative;
   transition: transform 1500ms;
+  
   transform-style: preserve-3d;
 }
-
+.bold{
+  font-weight: 900;
+}
+.trademark{
+  margin-top: 10px;
+  text-align: center;
+}
 .front,
 .back {
   height: 100%;
@@ -150,10 +157,25 @@ body {
   background-color: #3a3a3a;
   transform: rotateY(180deg);
   flex-direction: column;
-  background-image: url('./bd-3.jpg');
+  background-image: url('./Ak.jpg');
   background-size: cover;
   text-align: center;
-  
+  position: relative; 
+}
+.back::before{
+  width: 100%;
+  height: 115px;
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: #212121a8;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.back-card-text {
+  position: absolute;
+  bottom: 20px;
 }
 
 .back-card-text{
@@ -168,12 +190,12 @@ body {
 
 
 .cake {
-  position: absolute;
+  position: relative;
   width: 250px;
   height: 130px;
   left: 57%;
   margin-left: -125px;
-  bottom: -3%;
+  bottom: 0;
 }
 
 .plate {
