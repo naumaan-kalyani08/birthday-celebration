@@ -87,12 +87,12 @@
 body {
   height: 100%;
   /* overflow: hidden; */
-  background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
-  background: -webkit-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
-  background: -moz-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
-  background: -o-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
-  background: -ms-linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1);
-  background: linear-gradient(135deg, #FFFFFF, #FFDDDD, #FFB6C1); 
+  background: linear-gradient(135deg, #ffffff, #a4c5ff, #e1e7ff);
+  background: -webkit-linear-gradient(135deg, #ffffff, #a4c5ff, #e1e7ff); 
+  background: -moz-linear-gradient(135deg,#ffffff, #a4c5ff, #e1e7ff);
+  background: -o-linear-gradient(135deg,#ffffff, #a4c5ff, #e1e7ff); 
+  background: -ms-linear-gradient(135deg,#ffffff, #a4c5ff, #e1e7ff);
+  background: linear-gradient(135deg,#ffffff, #a4c5ff, #e1e7ff); 
   color: #333;
   margin-top: 15vh;
 }
@@ -100,7 +100,7 @@ body {
   margin: 2.5vh 0;
   text-align: center;
   font-size: 40px;
-  color: #D14D72;
+  color: #120e90;
 }
 .card-wrapper{
   display: flex;
@@ -157,7 +157,7 @@ body {
   background-color: #3a3a3a;
   transform: rotateY(180deg);
   flex-direction: column;
-  background-image: url('./Raj-Profile-Pic_opt.jpg');
+  background-image: url('./birthday.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
